@@ -4,7 +4,7 @@ RUN gpg --keyserver pool.sks-keyservers.net --recv-keys 7937DFD2AB06298B2293C318
 
 ENV NODE_VERSION 0.10.35
 
-RUN apt-get update && apt-get install -y curl git
+RUN apt-get update && apt-get install -y curl
 RUN curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x86.tar.gz" \
 	&& curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
 	&& gpg --verify SHASUMS256.txt.asc \
