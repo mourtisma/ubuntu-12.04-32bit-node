@@ -1,4 +1,4 @@
-FROM ioft/i386-ubuntu:latest
+FROM ioft/i386-ubuntu:16.04
 
 # gpg keys listed at https://github.com/nodejs/node
 RUN set -ex \
